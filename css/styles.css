@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 0;
+    z-index: 0;
+    transition: 0.5s;
+}
+
+#mobileHeaderOpen{
+    display: none;
+}
+
+#mobileHeader{
+    display: none;
+}
+
+#header{
+    display: block;
+    display: flex;
+    border-bottom: 3px solid grey;
+    margin-bottom: 0;
+    background-color: white;
+}
+
+#innerNavigation{
+    display: flex;
+
+    margin-left: 18%;
+    width: 100%;
+    margin-right: 9%;
+}
+
+.links{
+    color: black;
+    text-decoration: none;
+    width: auto;
+    text-align: center;
+    padding: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 150%;
+  
+    transition:0.5s;
+}
+.links:hover{
+    color: white;
+    background-color: #ffb700;
+    
+    transition: 0.5s;
+}
+
+#icon{
+    font-weight: bold;
+    font-size: 200%;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 12%;
+    color: purple;
+}
+
+
+@media only screen and (orientation: portrait){
+    #mobileHeader{
+        display: block;
+        display: flex;
+        border-bottom: 2px solid black;
+        /*position: fixed;*/
+        position: fixed;
+        background-color: white;
+        margin-left: 0;
+        margin-right: 0%;
+        width: 100%;
+        z-index: 3;
+        top: 0;
+    }
+
+    #header{
+        display: none;
+    }
+
+    #menu{
+        font-size: 175%;
+        margin-left: 4%;
+       
+        margin-top: 0;
+        color: purple;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        
+        transition: 0.7s;
+    }
+
+    #menu:hover{
+        
+        color: purple;
+        background-color:whitesmoke;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+
+
+    #icon{
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 2%;
+        font-size: 150%;
+    }
+
+    #mobileHeaderOpen{
+        display: block;
+        background-color:  #ffb700;
+        box-sizing: border-box;
+        border-right: 4px solid white;
+        border-left: 4px solid white;
+        position: absolute;
+        z-index: 2;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 95%;
+        border-top: 2px solid purple;
+        display: none;
+        position: fixed;
+        margin-top: 5vh;
+    }
+    
+    .mobileLinks{
+        font-size: 5.5vw;
+        padding: 5%;
+        color: white;
+        text-decoration: none;
+    }
+    .headerLinkHolder{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .headerLinkHolder:hover{
+        background-color: purple;
+    }
+
+    .mobileLinks:hover{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    #mobileMenu{
+        font-size: 6vw;
+        text-decoration: underline;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        
+    }
+}
