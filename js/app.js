@@ -7,3 +7,5 @@ function show(){
         document.getElementById('mobileHeader').style.borderBottom = 'none';
     }
 }
+
+document.getElementById('menu').addEventListener('click', show);
